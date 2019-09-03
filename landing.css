@@ -1,0 +1,412 @@
+@font-face {
+  font-family: Roboto-Medium;
+  src: url(roboto/Roboto-Medium.ttf);
+}
+
+@font-face {
+  font-family: Roboto-Light;
+  src: url(roboto/Roboto-Light.ttf);
+}
+
+@font-face {
+  font-family: Roboto-Thin;
+  src: url(roboto/Roboto-Thin.ttf);
+}
+
+@font-face {
+  font-family: Roboto-lightItalic;
+  src: url(roboto/Roboto-LightItalic.ttf);
+}
+
+@font-face {
+  font-family: 'brand-icons';
+  src: url('semantic/brand-icons.eot');
+  src: url('semantic/brand-icons.eot?#iefix') format('embedded-opentype'), url('semantic/brand-icons.woff2') format('woff2'), url('semantic/brand-icons.woff') format('woff'), url('semantic/brand-icons.ttf') format('truetype'), url('semantic/brand-icons.svg#icons') format('svg');
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-decoration: inherit;
+  text-transform: none;
+}
+
+@font-face {
+  font-family: 'icons';
+  src: url('semantic/icons.eot');
+  src: url('semantic/icons.eot?#iefix') format('embedded-opentype'), url('semantic/icons.woff2') format('woff2'), url('semantic/icons.woff') format('woff'), url('semantic/icons.ttf') format('truetype'), url('semantic/icons.svg#icons') format('svg');
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-decoration: inherit;
+  text-transform: none;
+}
+
+h1 {
+  font-size: 40px;
+  margin-top: 50px;
+  font-family: Roboto-Medium;
+  text-align: center;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.block {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 720px;
+}
+
+.aboutme {
+  width: 50%;
+  padding-left: 50px;
+}
+
+.myphoto {
+  width: 50%;
+  background-image: url(Lena.JPG);
+  background-size: cover;
+}
+
+.aboutme p {
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-family: Roboto-Light;
+}
+
+.aboutme p:first-child {
+  font-size: 60px;
+  margin-top: 200px;
+  font-family: Roboto-Medium;
+}
+
+.contacts {
+  font-size: 22px;
+  margin-top: 120px;
+  font-family: Roboto-Light;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+}
+
+.whyme {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: Roboto-Light;
+}
+
+.information {
+  width: 300px;
+  height: 200px;
+  font-family: Roboto-lightItalic;
+  font-size: 30px;
+}
+
+.rules {
+  width: 300px;
+  height: 200px;
+  list-style: none;
+  font-size: 50px;
+}
+
+.whyme .picture {
+  height: 520px;
+  width: 350px;
+  margin-left: 50px;
+  margin-right: 50px;
+  background: url(paris.JPG);
+  background-size: cover;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+}
+
+.use {
+  background: url(Lamp.JPG);
+  background-size: cover;
+}
+
+.skills {
+  height: 400px;
+  width: 400px;
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: Roboto-Light;
+  margin: auto;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.skills_row {
+  display: flex;
+  flex-direction: row;
+}
+
+.skills h1 {
+  font-size: 40px;
+  margin-top: 10px;
+  font-family: Roboto-Medium;
+  text-align: center;
+}
+
+.skills span {
+  color: red;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.scrin {
+  border: 1px solid black;
+  width: 300px;
+  height: 500px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.scrin.foto1 {
+  background: url(scan1.JPG);
+  background-size: cover;
+}
+
+.scrin.foto2 {
+  background: url(scan2.JPG);
+  background-size: 95%;
+}
+
+.scrin.foto3 {
+  background: url(scan3.JPG);
+  background-size: cover;
+}
+
+.footer {
+  height: 100px;
+  width: 100%;
+  background: black;
+  color: #7f7f7f;
+  font-size: 20px;
+  font-family: Roboto-Light;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.socialnetworks, .madewithlove {
+  margin: 45px;
+}
+
+.madewithlove {
+  display: flex;
+  flex-direction: row;
+  margin-right: 70px;
+}
+
+.spin {
+  animation: beat 0.8s linear infinite;
+  width: 35px;
+  height: 35px;
+}
+
+@keyframes beat {
+  30% {
+    transform: scale(1.3)
+  }
+}
+
+.button {
+  display: inline-block;
+  vertical-align: center;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.icon {
+  display: inline-block;
+  opacity: 1;
+  width: 1.18em;
+  height: 1em;
+  font-family: 'Icons';
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  text-align: center;
+  speak: none;
+  font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/*
+ * Social network icons
+ */
+
+.icon.vk, .icon.instagram {
+  font-family: 'brand-icons';
+  color: white;
+}
+
+.icon.telegram {
+  font-family: 'brand-icons';
+  color: black;
+}
+
+.icon.vk:before {
+  content: "\f189";
+}
+
+.icon.instagram:before {
+  content: "\f16d";
+}
+
+.icon.telegram:before {
+  content: "\f3fe";
+}
+
+.icon.mail {
+  font-family: 'icons';
+  color: black;
+}
+
+.icon.mail:before {
+  content: '\f0e0';
+}
+
+.permanentbutton {
+  background: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 60px;
+  z-index: 10;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px 0 rgba(17, 17, 17, .13);
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  div {
+    border: 1px solid blue;
+  }
+}
+@media screen and (max-width: 991px) {
+  div {
+    border: 1px solid green;
+  }
+}
+@media screen and (max-width: 767px) {
+  div {
+    border: 1px solid black;
+  }
+}
+@media screen and (max-width: 479px) {
+  div {
+    border: 1px solid red;
+  }
+  .block {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 2100px;
+  }
+  .main {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .aboutme {
+    width: 100%;
+    height: 50%;
+  }
+  .myphoto {
+    width: 100%;
+    height: 50%;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .aboutme p {
+    font-size: 60px;
+  }
+  h1 {
+    font-size: 80px;
+  }
+  .contacts {
+    font-size: 40px;
+  }
+  .information {
+    width: 600px;
+    height: 500px;
+    font-size: 55px;
+  }
+  .rules {
+    width: 600px;
+    height: 500px;
+    font-size: 65px;
+    margin-top: 100px;
+  }
+  .whyme .picture {
+    height: 1300px;
+    width: 700px;
+  }
+  .skills {
+    height: 800px;
+    /* width: 800px; */
+    font-size: 60px;
+    background-color: rgba(255, 255, 255, 0.7)
+  }
+  .skills h1 {
+    font-size: 60px;
+    margin-top: 50px;
+  }
+  .use {
+    background: url(cafe.JPG);
+    background-size: cover;
+  }
+  .project {
+    height: 4850px;
+  }
+  .scrin {
+    width: 800px;
+    height: 1550px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .footer {
+    font-size: 40px;
+    height: 150px;
+  }
+  .permanentbutton {
+    background: white;
+    width: 100px;
+    height: 100px;
+    bottom: 20px;
+    right: 50px;
+  }
+  .spin {
+    animation: beat 0.8s linear infinite;
+    width: 70px;
+    height: 70px;
+  }
+}
