@@ -41,8 +41,8 @@
 }
 
 h1 {
-  font-size: 7vh;
-  margin-top: 8vh;
+  font-size: 40px;
+  margin-top: 50px;
   font-family: Roboto-Medium;
   text-align: center;
 }
@@ -71,33 +71,32 @@ body, html {
 }
 
 .aboutme p {
-  font-size: 7vh;
-  margin-bottom: 5vh;
+  font-size: 40px;
+  margin-bottom: 20px;
   font-family: Roboto-Light;
-  padding-left: 10vh;
+  padding-left: 50px;
 }
 
 .aboutme p:first-child {
-  font-size: 8vh;
-  margin-top: 30vh;
+  font-size: 60px;
+  margin-top: 200px;
   font-family: Roboto-Medium;
 }
 
 .contacts {
-  font-size: 4vh;
-  margin-top: 20vh;
+  font-size: 22px;
+  margin-top: 100px;
   font-family: Roboto-Light;
-  padding-left: 10vh;
+  padding-left: 50px;
 }
 
 .container {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
-  margin-left: 8vh;
-  margin-right: 8vh;
-  margin-bottom: 5vh;
+  align-items: center; 
+  margin-bottom: 50px;
+  
 }
 
 .whyme {
@@ -108,26 +107,23 @@ body, html {
 }
 
 .information {
-  width: 50vh;
-  height: 40vh;
+  width:50vmin;
   font-family: Roboto-lightItalic;
-  font-size: 5.5vh;
+  font-size: 30px;
 }
 
 .rules {
-  width: 50vh;
-  height: 40vh;
+  width: 50vmin;
   list-style: none;
-  font-size: 7vh;
+  font-size: 50px;
 }
 
 .whyme .picture {
-  height: 70vh;
-  width: 50vh;
-  margin-left: 5vh;
-  margin-right: 5vh;
-  background: url(paris.JPG);
-  background-size: cover;
+  width:50vmin;
+  height:65vmin;
+  margin-left: 50px;
+  margin-right: 50px;
+  
 }
 
 .project {
@@ -141,9 +137,9 @@ body, html {
 }
 
 .skills {
-  height: 60vh;
-  width: 60vh;
-  font-size: 6vh;
+  height: 75vmin;
+  width: 75vmin;
+  font-size: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -160,29 +156,29 @@ body, html {
 }
 
 .skills h1 {
-  font-size: 7vh;
-  margin-top: 5vh;
+  font-size: 40px;
+  margin-top: 10px;
   font-family: Roboto-Medium;
   text-align: center;
 }
 
 .skills span {
   color: red;
-  margin-bottom: 3vh;
-  margin-top: 3vh;
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .scrin {
   border: 1px solid black;
-  width: 70vh;
-  height: 75vh;
-  margin-right: 3vh;
-  margin-left: 3vh;
+  width: 300px;
+  height: 500px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .scrin.foto1 {
   background: url(scan1.JPG);
-  background-size: 50vh;
+  background-size: cover;
 }
 
 .scrin.foto2 {
@@ -196,11 +192,11 @@ body, html {
 }
 
 .footer {
-  height: 10vh;
+  height: 80px;
   width: 100%;
   background: black;
   color: #7f7f7f;
-  font-size:3vh;
+  font-size: 20px;
   font-family: Roboto-Light;
   display: flex;
   flex-direction: row;
@@ -208,19 +204,19 @@ body, html {
 }
 
 .socialnetworks, .madewithlove {
-  margin: 3vh;
+  margin: 25px;
 }
 
 .madewithlove {
   display: flex;
   flex-direction: row;
-  margin-right: 10vh;
+  margin-right: 70px;
 }
 
 .spin {
   animation: beat 0.8s linear infinite;
-  width: 5vh;
-  height: 5vh;
+  width: 35px;
+  height: 35px;
 }
 
 @keyframes beat {
@@ -291,8 +287,8 @@ body, html {
 
 .permanentbutton {
   background: white;
-  width: 8vh;
-  height: 8vh;
+  width: 50px;
+  height: 50px;
   border-radius: 60px;
   z-index: 10;
   position: fixed;
@@ -314,23 +310,41 @@ body, html {
   div {
     border: 1px solid yellow;
   }
-  /* .block {
-    height: 1000px;
-  } */
+  
 }
 
 
-@media screen and (min-width: 768px) and (max-width: 1223px) {
+@media screen and (min-width: 768px) and (max-width: 1223px) and (orientation : portrait)  {
   div {
     border: 1px solid green;
   }
-  /* .whyme .picture {
-    width: 600px;
+  .container {
+    display: flex;
+    flex-direction: column;
   }
-  .scrin {
-    height: 300px;
-    width: 450px;
-  } */
+
+  .block {
+    display: flex;
+    flex-direction: column;
+  }
+  .main {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .aboutme {
+    width: 100%;
+    height: 30%;
+  }
+  .aboutme p:first-child {
+    margin-top: 30px;
+    font-size: 40px;
+  }
+  .myphoto {
+    width: 100%;
+    height: 70%;
+  }
+  
+
 }
 
 @media screen and (max-width: 480px) and (max-height:811px) {
@@ -340,14 +354,12 @@ body, html {
   .block {
     display: flex;
     flex-direction: column;
-    /* width: 100%;
-    height: 736px; */
   }
   .main {
     display: flex;
     flex-direction: column-reverse;
   }
-  /* .aboutme {
+  .aboutme {
     width: 100%;
     height: 50%;
   }
@@ -358,12 +370,12 @@ body, html {
   .myphoto {
     width: 100%;
     height: 50%;
-  } */
+  }
   .container {
     display: flex;
     flex-direction: column;
   }
-  /* .aboutme p {
+  .aboutme p {
     font-size: 40px;
   }
   h1 {
@@ -373,17 +385,10 @@ body, html {
   .contacts {
     margin-top: 30px;
   }
-  .information {
-    height: 150px; */
-  /* }
+ 
   .rules {
     font-size: 25px;
     margin-top: 20px;
-    height: 70px;
-  }
-  .whyme .picture {
-    height: 350px;
-    width: 250px;
   }
   .skills {
     height: 300px;
@@ -397,12 +402,12 @@ body, html {
   }
   .skills_row {
     font-size: 35px;
-  } */
+  }
   .use {
     background: url(cafe.JPG);
     background-size: cover;
   }
-  /* .project {
+  .project {
     height: 1700px;
   }
   .scrin {
@@ -421,7 +426,7 @@ body, html {
   }
   .permanentbutton {
     bottom: 40px;
-  } */
+  }
 }
 
 @media screen and (max-width: 480px) and (min-height:812px) and (max-height:1024px) {
@@ -431,14 +436,12 @@ body, html {
   .block {
     display: flex;
     flex-direction: column;
-    /* width: 100%;
-    height: 812px; */
   }
   .main {
     display: flex;
     flex-direction: column-reverse;
   }
-  /* .aboutme {
+  .aboutme {
     width: 100%;
     height: 50%;
   }
@@ -448,12 +451,12 @@ body, html {
   .myphoto {
     width: 100%;
     height: 50%;
-  } */
+  }
   .container {
     display: flex;
     flex-direction: column;
-  } 
-  /* .aboutme p {
+  }
+  .aboutme p {
     font-size: 40px;
   }
   h1 {
@@ -463,23 +466,16 @@ body, html {
   .contacts {
     margin-top: 50px;
   }
-  .information {
-    height: 150px;
-  } */
-  /* .rules {
+  
+  .rules {
     font-size: 30px;
     margin-top: 20px;
-    height: 100px;
   }
-  .whyme .picture {
-    height: 400px;
-    width: 300px;
-  }
+
   .skills {
     height: 300px;
     width: 300px;
     font-size: 35px;
-    background-color: rgba(255, 255, 255, 0.7)
   }
   .skills h1 {
     font-size: 50px;
@@ -487,12 +483,12 @@ body, html {
   }
   .skills_row {
     font-size: 35px;
-  }  */
+  }
   .use {
     background: url(cafe.JPG);
     background-size: cover;
   }
-  /* .project {
+  .project {
     height: 1700px;
   }
   .scrin {
@@ -511,7 +507,7 @@ body, html {
   }
   .permanentbutton {
     bottom: 40px;
-  } */
+  }
 }
 
 @media screen and (max-width: 479px) and (max-height:811px) and (-webkit-device-pixel-ratio: 2) {
@@ -521,14 +517,12 @@ body, html {
   .block {
     display: flex;
     flex-direction: column;
-    /* width: 100%;
-    height: 812px; */
   }
   .main {
     display: flex;
     flex-direction: column-reverse;
   }
-  /* .aboutme {
+  .aboutme {
     width: 100%;
     height: 50%;
   }
@@ -538,12 +532,12 @@ body, html {
   .myphoto {
     width: 100%;
     height: 50%;
-  } */
+  }
   .container {
     display: flex;
     flex-direction: column;
   }
-  /* .aboutme p {
+  .aboutme p {
     font-size: 40px;
   }
   h1 {
@@ -554,17 +548,13 @@ body, html {
     margin-top: 50px;
   }
   .information {
-    height: 150px;
+    font-size: 25px;
   }
   .rules {
-    font-size: 30px;
+    font-size: 25px;
     margin-top: 20px;
-    height: 100px;
   }
-  .whyme .picture {
-    height: 400px;
-    width: 300px;
-  }
+
   .skills {
     height: 300px;
     width: 300px;
@@ -577,12 +567,12 @@ body, html {
   }
   .skills_row {
     font-size: 35px;
-  } */
+  }
   .use {
     background: url(cafe.JPG);
     background-size: cover;
   }
-  /* .project {
+  .project {
     height: 1700px;
   }
   .scrin {
@@ -601,5 +591,88 @@ body, html {
   }
   .permanentbutton {
     bottom: 40px;
-  } */
+  }
+}
+
+@media screen and (max-width: 768px) and (-webkit-device-pixel-ratio: 2)  and (orientation : landscape)  {
+  div {
+    border: 1px solid gray;
+  }
+  .aboutme p:first-child {
+    margin-top: 20px;
+    font-size: 40px;
+  }
+  h1 {
+    margin-top: 10px;
+  }
+  .aboutme p {
+    font-size: 35px;
+  }
+  .contacts {
+    margin-top: 20px;
+  }
+  .information {
+    font-size: 25px;
+  }
+  .scrin {
+    height: 270px;
+  }
+}
+
+@media screen and (max-width: 768px) and (orientation : landscape)  {
+  div {
+    border: 1px solid gray;
+  }
+  .aboutme p:first-child {
+    margin-top: 20px;
+    font-size: 40px;
+  }
+  h1 {
+    margin-top: 10px;
+  }
+  .aboutme p {
+    font-size: 35px;
+  }
+  .contacts {
+    margin-top: 20px;
+  }
+  .information {
+    font-size: 25px;
+  }
+  .scrin {
+    height: 270px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px)  and (orientation : landscape)  {
+  div {
+    border: 1px solid green;
+  }
+  .aboutme p:first-child {
+    margin-top: 100px;
+    font-size: 40px;
+  }
+  h1 {
+    margin-top: 15px;
+  }
+  .contacts {
+    margin-top: 50px;
+  }
+  .information {
+    font-size: 25px;
+  }
+  .scrin {
+    height: 285px;
+     width: 200px; 
+  }
+}
+
+@media screen and (min-width: 1024px) and (orientation : landscape)  {
+  div {
+    border: 1px solid green;
+  }
+  .scrin {
+    height: 500px;
+    
+  }
 }
