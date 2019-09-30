@@ -1,25 +1,3 @@
-@font-face {
-  font-family: 'brand-icons';
-  src: url('semantic/brand-icons.eot');
-  src: url('semantic/brand-icons.eot?#iefix') format('embedded-opentype'), url('semantic/brand-icons.woff2') format('woff2'), url('semantic/brand-icons.woff') format('woff'), url('semantic/brand-icons.ttf') format('truetype'), url('semantic/brand-icons.svg#icons') format('svg');
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-decoration: inherit;
-  text-transform: none;
-}
-
-@font-face {
-  font-family: 'icons';
-  src: url('semantic/icons.eot');
-  src: url('semantic/icons.eot?#iefix') format('embedded-opentype'), url('semantic/icons.woff2') format('woff2'), url('semantic/icons.woff') format('woff'), url('semantic/icons.ttf') format('truetype'), url('semantic/icons.svg#icons') format('svg');
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-decoration: inherit;
-  text-transform: none;
-}
-
 h1 {
   font-size: 40px;
   margin-top: 50px;
