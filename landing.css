@@ -351,9 +351,9 @@ body, html {
 }
 
 @media screen and (max-width: 480px) and (max-height:811px) {
-  div {
+  /* div {
     border: 1px solid orange;
-  }
+  } */
   .block {
     display: flex;
     flex-direction: column;
