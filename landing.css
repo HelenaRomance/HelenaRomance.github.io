@@ -222,57 +222,16 @@ body, html {
   margin-left: 5px;
 }
 
-.icon {
-  display: inline-block;
-  opacity: 1;
-  width: 1.18em;
-  height: 1em;
-  font-family: 'Icons';
-  font-style: normal;
-  font-weight: normal;
-  text-decoration: inherit;
-  text-align: center;
-  speak: none;
-  font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
 /*
  * Social network icons
  */
 
-.icon.vk, .icon.instagram {
-  font-family: 'brand-icons';
+ .fab.fa-vk, .fab.fa-instagram {
   color: white;
 }
 
-.icon.telegram {
-  font-family: 'brand-icons';
+.fab.fa-telegram-plane, .fas.fa-envelope {
   color: black;
-}
-
-.icon.vk:before {
-  content: "\f189";
-}
-
-.icon.instagram:before {
-  content: "\f16d";
-}
-
-.icon.telegram:before {
-  content: "\f3fe";
-}
-
-.icon.mail {
-  font-family: 'icons';
-  color: black;
-}
-
-.icon.mail:before {
-  content: '\f0e0';
 }
 
 .permanentbutton {
