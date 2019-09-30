@@ -1,24 +1,4 @@
 @font-face {
-  font-family: Roboto-Medium;
-  src: url(roboto/Roboto-Medium.ttf);
-}
-
-@font-face {
-  font-family: Roboto-Light;
-  src: url(roboto/Roboto-Light.ttf);
-}
-
-@font-face {
-  font-family: Roboto-Thin;
-  src: url(roboto/Roboto-Thin.ttf);
-}
-
-@font-face {
-  font-family: Roboto-lightItalic;
-  src: url(roboto/Roboto-LightItalic.ttf);
-}
-
-@font-face {
   font-family: 'brand-icons';
   src: url('semantic/brand-icons.eot');
   src: url('semantic/brand-icons.eot?#iefix') format('embedded-opentype'), url('semantic/brand-icons.woff2') format('woff2'), url('semantic/brand-icons.woff') format('woff'), url('semantic/brand-icons.ttf') format('truetype'), url('semantic/brand-icons.svg#icons') format('svg');
@@ -43,7 +23,8 @@
 h1 {
   font-size: 40px;
   margin-top: 50px;
-  font-family: Roboto-Medium;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   text-align: center;
 }
 
@@ -73,20 +54,23 @@ body, html {
 .aboutme p {
   font-size: 40px;
   margin-bottom: 20px;
-  font-family: Roboto-Light;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
   padding-left: 50px;
 }
 
 .aboutme p:first-child {
   font-size: 60px;
   margin-top: 200px;
-  font-family: Roboto-Medium;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
 }
 
 .contacts {
   font-size: 22px;
   margin-top: 100px;
-  font-family: Roboto-Light;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
   padding-left: 50px;
 }
 
@@ -103,12 +87,15 @@ body, html {
   display: flex;
   flex-direction: column;
   text-align: center;
-  font-family: Roboto-Light;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 }
 
 .information {
   width:50vmin;
-  font-family: Roboto-lightItalic;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-style: italic;
   font-size: 30px;
 }
 
@@ -144,7 +131,8 @@ body, html {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  font-family: Roboto-Light;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
   margin: auto;
   color: black;
   background-color: rgba(255, 255, 255, 0.5);
@@ -158,7 +146,8 @@ body, html {
 .skills h1 {
   font-size: 40px;
   margin-top: 10px;
-  font-family: Roboto-Medium;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   text-align: center;
 }
 
@@ -197,7 +186,8 @@ body, html {
   background: black;
   color: #7f7f7f;
   font-size: 20px;
-  font-family: Roboto-Light;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
