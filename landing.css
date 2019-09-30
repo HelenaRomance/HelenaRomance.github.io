@@ -560,6 +560,9 @@ body, html {
     font-size: 25px;
     margin-top: 20px;
   }
+  .whyme .picture {
+    margin-top: 20px;
+  }
 
   .skills {
     height: 300px;
