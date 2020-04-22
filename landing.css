@@ -1,13 +1,6 @@
 @font-face {
   font-display: swap;
 }
-h1 {
-  font-size: 40px;
-  margin-top: 50px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  text-align: center;
-}
 
 body, html {
   height: 100%;
@@ -20,6 +13,7 @@ body, html {
   flex-direction: row;
   width: 100%;
   height: 100vh;
+  
 }
 
 .aboutme {
@@ -28,7 +22,7 @@ body, html {
 
 .myphoto {
   width:50%;
-  background-image: url(./Lena.jpg);
+  background-image: url(main.JPG);
   background-size: cover;
 }
 
@@ -36,7 +30,7 @@ body, html {
   font-size: 40px;
   margin-bottom: 20px;
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+  font-weight: 100; 
   padding-left: 50px;
 }
 
@@ -44,7 +38,7 @@ body, html {
   font-size: 60px;
   margin-top: 200px;
   font-family: 'Roboto', sans-serif;
-  font-weight: 500;
+  font-weight: 300;
 }
 
 .contacts {
@@ -55,110 +49,93 @@ body, html {
   padding-left: 50px;
 }
 
-.container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center; 
-  margin-bottom: 50px;
-  
-}
-
 .whyme {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-}
-
-.information {
-  width:50vmin;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  font-style: italic;
-  font-size: 30px;
-}
-
-.rules {
-  width: 50vmin;
-  list-style: none;
-  font-size: 50px;
+  padding-top: 100px; 
 }
 
 .whyme .picture {
-  width:50vmin;
-  height:65vmin;
-  margin-left: 50px;
-  margin-right: 50px;
+  width:320px;
+  height:435px;
+  margin-left: 100px;
   
 }
-
-.project {
-  display: flex;
-  flex-direction: column;
-}
-
-.use {
-  background: url(Lamp.JPG);
-  background-size: cover;
-}
-
-.skills {
-  height: 75vmin;
-  width: 75vmin;
-  font-size: 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+.information {
+  height: 90px;
+  width: 550px;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  margin: auto;
-  color: black;
-  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 30px;
+  margin-left: 160px;  
 }
 
-.skills_row {
-  display: flex;
-  flex-direction: row;
-}
-
-.skills h1 {
-  font-size: 40px;
-  margin-top: 10px;
+.rules {
+  list-style: none;
+  font-size: 30px;
   font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  text-align: center;
-}
-
-.skills span {
-  color: red;
-  margin-bottom: 15px;
-  margin-top: 15px;
-}
-
-.scrin {
-  border: 1px solid black;
-  width: 300px;
-  height: 500px;
-  margin-right: 20px;
+  font-weight: 100; 
+  writing-mode:vertical-rl;
   margin-left: 20px;
 }
 
-.scrin.foto1 {
-  background: url(scan1.JPG);
-  background-size: cover;
+.one {
+  grid-area: a;
+}
+.two {
+  grid-area: b;
+}
+.three {
+  grid-area: c;
+}
+.four {
+  grid-area: d;
+}
+.five {
+  grid-area: e;
 }
 
-.scrin.foto2 {
-  background: url(scan2.JPG);
-  background-size: 95%;
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(3, 200px);
+  grid-template-areas:
+  "a a a b b b b b b b"
+  "a a a c c c c e e e"
+  "d d d d d d d e e e";
+  grid-gap: 10px;
+  max-width: 850px;
+margin: auto;
+padding-bottom: 100px;
 }
 
-.scrin.foto3 {
-  background: url(scan3.JPG);
-  background-size: cover;
+.one {
+  background: url(CV.jpg);
+  filter:grayscale(90%); 
+}
+.two {
+  background: url(omni4.jpg);
+  filter:grayscale(90%); 
+}
+.three {
+  background: black;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: white;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.four {
+background: url(rzds.jpg);
+filter:grayscale(90%); 
+}
+.five {
+  background: url(scan5orig.jpg);
+}
+
+.wrapper div:hover {
+  filter:grayscale(0%); 
+  cursor: pointer;
 }
 
 .footer {
