@@ -22,7 +22,7 @@ body, html {
 
 .myphoto {
   width:50%;
-  background-image: url(main.JPG);
+  background-image: url(main.jpg);
   background-size: cover;
 }
 
