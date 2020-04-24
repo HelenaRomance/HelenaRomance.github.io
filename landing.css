@@ -67,7 +67,6 @@ body, html {
 }
 
 .information {
-  /* width: 550px; */
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 30px;
@@ -585,5 +584,8 @@ padding-bottom: 50px;
   margin-left: 20px;
 }
 
- 
+.wrapper {
+  grid-gap: 20px;
+  max-width: 1000px;
+}
 }
