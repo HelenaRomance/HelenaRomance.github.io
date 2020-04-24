@@ -67,8 +67,7 @@ body, html {
 }
 
 .information {
-  height: 90px;
-  width: 550px;
+  /* width: 550px; */
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 30px;
@@ -213,7 +212,7 @@ filter:grayscale(90%);
 
 /* Media */
 
-/* @media (min-width: 1224px) and (max-width: 1823px) {
+ @media (min-width: 1224px) and (max-width: 1823px) {
   div {
     border: 1px solid blue;
   }
@@ -223,7 +222,7 @@ filter:grayscale(90%);
     border: 1px solid yellow;
   }
   
-} */
+} 
 
 
 @media screen and (min-width: 768px) and (max-width: 1223px) and (orientation : portrait)  {
@@ -294,6 +293,22 @@ filter:grayscale(90%);
   .contacts {
     margin-top: 30px;
   }
+  .whyme .picture {
+    margin-left: 10px;
+  }
+  .rules {
+   font-size: 25px;
+   margin-left: 10px;
+  }
+  .picture img {
+    width: 300px;
+    max-width: 100%;
+  }
+  .information {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 10px;
+  }
  
   .footer {
     font-size: 17px;
@@ -344,8 +359,44 @@ filter:grayscale(90%);
   .contacts {
     margin-top: 50px;
   }
+
+
+.whyme .picture {
+  margin-left: 10px;
+}
+.rules {
+ font-size: 25px;
+ margin-left: 10px;
+}
+.picture img {
+  width: 300px;
+  max-width: 100%;
+}
+.information {
+  font-size: 25px;
+  margin-top: 30px;
+  margin-left: 10px;
+}
   
-  
+.wrapper {
+  grid-template-columns: repeat(1, 300px);
+  grid-template-rows: 450px 200px 300px 200px 300px ;
+  grid-template-areas:
+  "a"
+  "b"
+  "c"
+  "d"
+  "e";
+  grid-gap: 5px;
+   max-width: 350px;
+margin-left: 10px;
+margin-right: 10px;
+padding-bottom: 50px;
+}
+
+/* .wrapper img {
+  object-fit: cover;
+} */
   .footer {
     font-size: 17px;
     height: 60px;
@@ -395,14 +446,23 @@ filter:grayscale(90%);
   .contacts {
     margin-top: 50px;
   }
-  .information {
-    font-size: 25px;
-  }
   
   .whyme .picture {
-    margin-top: 20px;
+    margin-left: 10px;
   }
-
+  .rules {
+   font-size: 25px;
+   margin-left: 10px;
+  }
+  .picture img {
+    width: 300px;
+    max-width: 100%;
+  }
+  .information {
+    font-size: 25px;
+    margin-top: 30px;
+    margin-left: 10px;
+  }
   .footer {
     font-size: 17px;
     height: 60px;
@@ -480,7 +540,50 @@ filter:grayscale(90%);
 
 @media screen and (min-width: 1024px) and (orientation : landscape)  {
   div {
-    border: 1px solid green;
+    border: 1px solid black;
   } 
+
+
+.aboutme p {
+  font-size: 60px;
+  margin-bottom: 50px;
+  padding-left: 100px;
+}
+
+.aboutme p:first-child {
+  font-size: 80px;
+  margin-top: 300px;
+}
+
+.contacts {
+  font-size: 25px;
+  margin-top: 300px;
+  padding-left: 100px;
+}
+
+.whyme {
+  padding-top: 150px; 
+}
+
+.whyme .picture {
+  margin-left: 100px;
+}
+
+
+.picture img {
+  width:420px;
+  height:535px; 
+}
+
+.information {
+  font-size: 40px;
+  margin-left: 200px;  
+}
+
+.rules {
+  font-size: 35px;
+  margin-left: 20px;
+}
+
  
 }
