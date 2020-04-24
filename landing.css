@@ -54,20 +54,18 @@ body, html {
 }
 
 .whyme .picture {
-   /* width:320px;
-  height:435px; 
-  width:25vmin;
-  height:65vmin; */
   margin-left: 100px;
 }
 .picture {
   display: flex;
   flex-direction: row;
 }
+
 .picture img {
-  width:25vmax;
-  height:35vmax;
+  width:320px;
+  height:435px; 
 }
+
 .information {
   height: 90px;
   width: 550px;
