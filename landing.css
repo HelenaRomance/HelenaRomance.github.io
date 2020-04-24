@@ -227,9 +227,9 @@ filter:grayscale(90%);
 
 
 @media screen and (min-width: 768px) and (max-width: 1223px) and (orientation : portrait)  {
-  /* div {
+  div {
     border: 1px solid green;
-  } */
+  } 
  
   .container.wm {
     display: flex;
@@ -260,9 +260,9 @@ filter:grayscale(90%);
 }
 
 @media screen and (max-width: 480px) and (max-height:811px) {
-  /* div {
+  div {
     border: 1px solid orange;
-  } */
+  } 
   .block {
     display: flex;
     flex-direction: column;
@@ -311,9 +311,9 @@ filter:grayscale(90%);
 }
 
 @media screen and (max-width: 480px) and (min-height:812px) and (max-height:1024px) {
-  /* div {
+  div {
     border: 1px solid red;
-  } */
+  }
   .block {
     display: flex;
     flex-direction: column;
@@ -362,9 +362,9 @@ filter:grayscale(90%);
 }
 
 @media screen and (max-width: 479px) and (max-height:811px) and (-webkit-device-pixel-ratio: 2) {
-  /* div {
+  div {
     border: 1px solid violet;
-  } */
+  } 
   .block {
     display: flex;
     flex-direction: column;
@@ -419,9 +419,9 @@ filter:grayscale(90%);
 }
 
 @media screen and (max-width: 768px) and (-webkit-device-pixel-ratio: 2)  and (orientation : landscape)  {
-  /* div {
+  div {
     border: 1px solid gray;
-  } */
+  } 
   .aboutme p:first-child {
     margin-top: 20px;
     font-size: 40px;
@@ -440,9 +440,9 @@ filter:grayscale(90%);
 }
 
 @media screen and (max-width: 768px) and (orientation : landscape)  {
-  /* div {
+  div {
     border: 1px solid gray;
-  } */
+  } 
   .aboutme p:first-child {
     margin-top: 20px;
     font-size: 40px;
@@ -461,9 +461,9 @@ filter:grayscale(90%);
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px)  and (orientation : landscape)  {
-  /* div {
+  div {
     border: 1px solid green;
-  } */
+  } 
   .aboutme p:first-child {
     margin-top: 100px;
     font-size: 40px;
@@ -479,8 +479,8 @@ filter:grayscale(90%);
 }
 
 @media screen and (min-width: 1024px) and (orientation : landscape)  {
-  /* div {
+  div {
     border: 1px solid green;
-  } */
+  } 
  
 }
