@@ -127,13 +127,12 @@ padding-bottom: 100px;
   filter:grayscale(90%);
   width: 100%; 
   height: 100%;
-  /* object-fit: cover; */
   background-position: center center;
   background-repeat: no-repeat;
   overflow: hidden;
  }
 
-.wrapper div:hover {
+.wrapper img:hover {
   filter:grayscale(0%); 
   cursor: pointer;
 }
@@ -263,6 +262,7 @@ padding-bottom: 100px;
   
   .wrapper {
     max-width: 1000px;
+    grid-template-rows: repeat(3, 300px);
   }
   
 } 
